@@ -1,0 +1,264 @@
+
+=======================================================
+Mozilla Apps
+=======================================================
+
+:Author: Kumar McMillan
+:Where: Webdev offsite!
+
+Overview
+================
+
+- Why apps?
+- anatomy of an app
+- B2G
+- Mozilla Marketplace
+- in-app payments
+
+The Rise of Apps
+================
+
+.. image:: images/ipads-small.jpg
+
+Apps are different
+==================
+
+.. image:: images/drawsome-dash.PNG
+    :width: 384px
+    :height: 512
+
+Apps are everywhere
+===================
+
+.. image:: images/car-apps-pandora.jpg
+
+The Players
+===========
+
+.. image:: images/ios-logo.png
+
+.. image:: images/Android-Logo_thumb.jpg
+    :width: 220
+
+The Players
+===========
+
+.. image:: images/ios-logo.png
+
+.. image:: images/Android-Logo_thumb.jpg
+    :width: 220
+
+.. image:: images/Facebook-apps.png
+    :width: 250
+
+The Threat
+==========
+
+Objective C vs. Java
+
+- developers: wtf
+- vertical silos
+- closed source, proprietrary
+- incentive for lock-in
+
+The Opportunity
+===============
+
+- Everyone knows HTML
+- the Web
+- open source inspires participation
+- here, have some cake
+
+Mozilla Apps
+============
+
+- new group born out of Labs
+- B2G / Gaia team
+- WebRT (web runtime)
+- Mozilla Marketplace
+- PDF.js + fill in the gaps
+- We haz Bizdev
+
+Run web apps anywhere
+=====================
+
+.. image:: images/mozmarket-all-platforms.png
+
+Google Chrome Apps
+==================
+
+- weak branding
+- signed blobs of code
+- only works in Chrome
+- sharing standards / best practices
+
+Boot to Gecko
+=============
+
+.. image:: images/openwebdevices.png
+
+Boot To Gecko
+=============
+
+.. image:: images/b2g_screens_2_1000.jpg
+    :width: 800px
+
+manifest.webapp
+===============
+
+.. code-block:: javascript
+
+    {"name": "CHIRP Radio",
+     "description": "...",
+     "version": "1.0",
+     "launch_path": "/",
+     "icons": {"72": "/media/Icon-72.png"},
+     "installs_allowed_from": ["*"]}
+
+manifest.appcache
+=================
+
+::
+
+    CACHE MANIFEST
+    index.html
+    js/browser.js
+    style/browser.css
+    ...
+
+    NETWORK:
+    http://*
+    https://*
+
+Localization
+============
+
+locale/dialer.properties::
+
+    [ar]
+    call=اتصال
+
+.. code-block:: html
+
+    <link rel="resource" type="application/l10n"
+          href="locale/dialer.properties">
+
+.. code-block:: html
+
+    <span data-l10n-id="call">Call</span>
+
+Mozilla Marketplace
+===================
+
+.. image:: images/mozilla-marketplace.png
+
+Installing apps
+===============
+
+.. image:: images/mozmarket-install.png
+
+App receipts
+============
+
+- JWT (JSON Web Token)
+- signed with a strong RSA key
+- verification service
+
+  - open for use anywhere
+
+In-app Payments
+===============
+
+.. image:: images/drawsome-dash.PNG
+    :width: 384px
+
+In-app Payments
+===============
+
+.. image:: images/drawsome-coin-shop.PNG
+    :width: 384px
+
+In-app Payments
+===============
+
+.. image:: images/drawsome-skrillex.PNG
+    :width: 384px
+
+In-app Payments
+===============
+
+.. code-block:: javascript
+
+    mozmarket.buy(signedJWTrequest,
+                  onSuccess,
+                  onError);
+
+In-app Payments
+===============
+
+.. image:: images/inapp-pay.png
+
+In-app Payments
+===============
+
+.. code-block:: javascript
+
+    {
+      "aud": "marketplace.mozilla.org",
+      "iss": "81EQW4JS26Q8VE6G1TO2",
+      "request": {
+        "currency": "USD",
+        "price": "1.99",
+        "name": "Moar Coins",
+        "description": "..."
+      },
+    }
+
+In-app Payments
+===============
+
+- pay wall (no ads)
+- Internet TV (pay per view)
+- game purchases
+- direct digital goods
+
+  - music (mp3)
+  - ebooks
+
+Future of in-app payments
+=========================
+
+- M-Pesa
+
+  - widely used in Kenya
+  - pay by text message
+
+- Trust models
+- Identity + payments
+- P2P payments
+
+Hacking on B2G
+==============
+
+- read the GAIA source
+- use appcache
+- potch's picolib (on github)
+- what app would you use?
+- in-app payments?
+
+App Developers
+==============
+
+- app skin (twitter bootstrap?)
+- example apps for demos
+
+  - in-app purchases
+
+- receipt verifier code
+- in-app payment libs
+- app services?
+
+That's it
+=========
+
+Questions?
