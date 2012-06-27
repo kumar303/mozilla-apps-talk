@@ -11,5 +11,5 @@ these commands will do it::
   pip install -r requirements.txt
   python build.py
 
-_`Mozilla Apps Project`: https://developer.mozilla.org/en/Apps/
-_`View the slides on github`: http://kumar303.github.com/mozilla-apps-talk
+.. _`Mozilla Apps Project`: https://developer.mozilla.org/en/Apps/
+.. _`View the slides on github`: http://kumar303.github.com/mozilla-apps-talk
