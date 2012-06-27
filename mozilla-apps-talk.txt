@@ -4,16 +4,17 @@ Mozilla Apps
 =======================================================
 
 :Author: Kumar McMillan
-:Where: Webdev offsite!
+:Where: JS.chi() Meetup
 
-Overview
-================
+The Web
+=======
 
-- Why apps?
-- anatomy of an app
-- B2G
-- Mozilla Marketplace
-- in-app payments
+.. image:: images/the-web-is-the-platform.png
+
+mobile apps
+===========
+
+.. image:: images/flurry-mobile-v-desktop-usage.png
 
 The Rise of Apps
 ================
@@ -40,112 +41,59 @@ The Players
 .. image:: images/Android-Logo_thumb.jpg
     :width: 220
 
-The Players
-===========
+Open Web Apps
+=============
 
-.. image:: images/ios-logo.png
+.. image:: images/the-web-is-the-platform.png
 
-.. image:: images/Android-Logo_thumb.jpg
-    :width: 220
+The Web Players?
+================
 
 .. image:: images/Facebook-apps.png
     :width: 250
 
-The Threat
-==========
+.. image:: images/google-chrome-logo.jpg
+    :width: 225
 
-Objective C vs. Java
+Mozilla Apps Platform
+=====================
 
-- developers: wtf
-- vertical silos
-- closed source, proprietrary
-- incentive for lock-in
+.. class:: incremental
 
-The Opportunity
-===============
+    - Web Runtime / Android / Boot to Gecko
+    - Mozilla Marketplace
 
-- Everyone knows HTML
-- the Web
-- open source inspires participation
-- here, have some cake
+      - portable receipts
+      - in-app payments
 
-Mozilla Apps
-============
+    - apps in the cloud
+    - Fill in the gaps
 
-- new group born out of Labs
-- B2G / Gaia team
-- WebRT (web runtime)
-- Mozilla Marketplace
-- PDF.js + fill in the gaps
-- We haz Bizdev
+      - PDF.js
+      - audio/video
+
+    - Identity
 
 Run web apps anywhere
 =====================
 
 .. image:: images/mozmarket-all-platforms.png
 
-Google Chrome Apps
-==================
-
-- weak branding
-- signed blobs of code
-- only works in Chrome
-- sharing standards / best practices
-
 Boot to Gecko
 =============
 
 .. image:: images/openwebdevices.png
 
-Boot To Gecko
+Boot to Gecko
 =============
 
 .. image:: images/b2g_screens_2_1000.jpg
     :width: 800px
 
-manifest.webapp
-===============
+arewemobileyet.com
+==================
 
-.. code-block:: javascript
-
-    {"name": "CHIRP Radio",
-     "description": "...",
-     "version": "1.0",
-     "launch_path": "/",
-     "icons": {"72": "/media/Icon-72.png"},
-     "installs_allowed_from": ["*"]}
-
-manifest.appcache
-=================
-
-::
-
-    CACHE MANIFEST
-    index.html
-    js/browser.js
-    style/browser.css
-    ...
-
-    NETWORK:
-    http://*
-    https://*
-
-Localization
-============
-
-locale/dialer.properties::
-
-    [ar]
-    call=اتصال
-
-.. code-block:: html
-
-    <link rel="resource" type="application/l10n"
-          href="locale/dialer.properties">
-
-.. code-block:: html
-
-    <span data-l10n-id="call">Call</span>
+.. image:: images/arewemobileyet.png
 
 Mozilla Marketplace
 ===================
@@ -157,14 +105,31 @@ Installing apps
 
 .. image:: images/mozmarket-install.png
 
-App receipts
-============
+App on Mac OS X
+===============
 
-- JWT (JSON Web Token)
-- signed with a strong RSA key
-- verification service
+.. image:: images/boston-globe-mac-os-x.png
 
-  - open for use anywhere
+manifest.webapp
+===============
+
+.. code-block:: javascript
+
+    {"name": "Boston Globe",
+     "description": "...",
+     "version": "1.0",
+     "launch_path": "/",
+     "icons": {"72": "/media/Icon-72.png"},
+     "installs_allowed_from": ["*"]}
+
+Paid apps
+=========
+
+.. code-block:: javascript
+
+    mozmarket.receipts.verify(function (verifier) {
+      // Look at verifier.state
+    });
 
 In-app Payments
 ===============
@@ -189,76 +154,103 @@ In-app Payments
 
 .. code-block:: javascript
 
-    mozmarket.buy(signedJWTrequest,
-                  onSuccess,
-                  onError);
+    request = mozmarket.buy(onSuccess,
+                            onError);
+    request.sign(paymentJWT)
 
 In-app Payments
 ===============
 
 .. image:: images/inapp-pay.png
 
-In-app Payments
-===============
+Identity
+========
 
-.. code-block:: javascript
+.. image:: images/persona-id.png
 
-    {
-      "aud": "marketplace.mozilla.org",
-      "iss": "81EQW4JS26Q8VE6G1TO2",
-      "request": {
-        "currency": "USD",
-        "price": "1.99",
-        "name": "Moar Coins",
-        "description": "..."
-      },
-    }
+Identity
+========
 
-In-app Payments
-===============
+::
 
-- pay wall (no ads)
-- Internet TV (pay per view)
-- game purchases
-- direct digital goods
+    kumar.mcmillan@gmail.com
+    |
+    navigator.id.getVerifiedEmailAddress()
+        |
+        https://gmail.com/.well-known/vep
+            |
+            <assertion>
 
-  - music (mp3)
-  - ebooks
+...
+===
 
-Future of in-app payments
-=========================
+.. class:: huge center
 
-- M-Pesa
+    Hello, developers!
 
-  - widely used in Kenya
-  - pay by text message
+Apps: how do we get there?
+==========================
 
-- Trust models
-- Identity + payments
-- P2P payments
+- better mobile experience
 
-Hacking on B2G
-==============
+  - responsive
+  - offline
 
-- read the GAIA source
-- use appcache
-- potch's picolib (on github)
-- what app would you use?
-- in-app payments?
+- better UI libs
+- better dev tools
 
-App Developers
-==============
+Responsive Design
+=================
 
-- app skin (twitter bootstrap?)
-- example apps for demos
+[demo of Responsive Design View in Firefox]
 
-  - in-app purchases
+manifest.appcache
+=================
 
-- receipt verifier code
-- in-app payment libs
-- app services?
+::
 
-That's it
-=========
+    CACHE MANIFEST
+    index.html
+    js/main.js
+    style/main.css
+    ...
+
+    NETWORK:
+    http://*
+    https://*
+
+Web Components (X-Tags)
+=======================
+
+::
+
+    <x-slidebox>
+        <x-slides>
+            <x-slide>Slide 1</x-slide>
+            <x-slide>Slide 2</x-slide>
+            <x-slide>Slide 3</x-slide>
+        </x-slides>
+    </x-slidebox>
+
+App Bootstrap
+=============
+
+::
+
+    npm install -g volo
+    volo create your-app mozilla/mortar
+
+- based on HTML5boilerplate
+- include Twitter bootstrap UI
+- includes x-tags
+- pre-built manifest
+
+What's next
+===========
+
+- make awesome UI libs
+- make fantastic dev tools
 
 Questions?
+
+Further updates: @kumar303
