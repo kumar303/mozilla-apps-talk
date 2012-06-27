@@ -12,4 +12,4 @@ these commands will do it::
   python build.py
 
 _`Mozilla Apps Project`: https://developer.mozilla.org/en/Apps/
-_`View the slides on github`_: http://kumar303.github.com/mozilla-apps-talk
+_`View the slides on github`: http://kumar303.github.com/mozilla-apps-talk
