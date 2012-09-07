@@ -9,7 +9,7 @@ If you checked out the code and want to build the slides yourself,
 these commands will do it::
 
   pip install -r requirements.txt
-  python build.py
+  python build.py mozilla-apps-talk.txt
 
 .. _`Mozilla Apps Project`: https://developer.mozilla.org/en/Apps/
 .. _`View the slides on github`: http://kumar303.github.com/mozilla-apps-talk
