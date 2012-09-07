@@ -1,15 +1,11 @@
 
 =======================================================
-Mozilla Apps
+Firefox OS: The Web Is The Platform
 =======================================================
 
-:Author: Kumar McMillan
-:Where: JS.chi() Meetup
-
-The Web
-=======
-
-.. image:: images/the-web-is-the-platform.png
+:Author: Kumar McMillan, Mozilla
+:Where: IIT RTC Conference
+:When: Sep 2012
 
 mobile apps
 ===========
@@ -21,20 +17,8 @@ The Rise of Apps
 
 .. image:: images/ipads-small.jpg
 
-Apps are different
-==================
-
-.. image:: images/drawsome-dash.PNG
-    :width: 384px
-    :height: 512
-
-Apps are everywhere
-===================
-
-.. image:: images/car-apps-pandora.jpg
-
-The Players
-===========
+Mobile Players
+==============
 
 .. image:: images/ios-logo.png
 
@@ -55,37 +39,93 @@ The Web Players?
 .. image:: images/google-chrome-logo.jpg
     :width: 225
 
-Mozilla Apps Platform
-=====================
+Firefox OS
+==========
+
+.. image:: images/firefox-os-phone.png
 
 .. class:: incremental
 
-    - Web Runtime / Android / Boot to Gecko
-    - Mozilla Marketplace
-
-      - portable receipts
-      - in-app payments
-
-    - apps in the cloud
-    - Fill in the gaps
-
-      - PDF.js
-      - audio/video
-
+    - Open Web Devices
+    - Open Web Apps
+    - Firefox Marketplace
     - Identity
+
+manifest.webapp
+===============
+
+https://mobile.twitter.com/cache/twitter.webapp
+
+.. code-block:: javascript
+
+  {"version": "1.0",
+   "name": "Twitter",
+   "icons": {...},
+   "locales": {
+       "en": {
+           "description": "Twitter for mobile"
+       },
+       ...
+    }}
+
+Portable Receipts
+=================
+
+.. code-block:: javascript
+
+    [{"exp": 1366996465,
+      "iat": 1335460465,
+      "iss": "https://marketplace.mozilla.org/pub.jwk",
+      "jwk": [{"alg": "RSA", ...}]]
+
+Verifying Receipts
+==================
+
+POST https://receiptcheck-marketplace.mozilla.org/verify/...
+
+Packaged Apps
+=============
+
+- webapp.zip
+- signed by Marketplace key
 
 Run web apps anywhere
 =====================
 
 .. image:: images/mozmarket-all-platforms.png
 
-Boot to Gecko
-=============
+Open From Day 1
+===============
+
+.. image:: images/b2g-git.png
+
+Partners
+========
+
+- Telefonica
+- ?
+- ?
+- ?
+
+Raspberry Pi
+============
+
+.. image:: images/firefox-os-on-raspberry-pi.png
+
+Firefox OS
+==========
+
+- Gonk
+- Gecko
+- Gaia
+
+Firefox OS
+==========
 
 .. image:: images/openwebdevices.png
 
-Boot to Gecko
-=============
+Firefox OS
+==========
 
 .. image:: images/b2g_screens_2_1000.jpg
     :width: 800px
@@ -95,41 +135,15 @@ arewemobileyet.com
 
 .. image:: images/arewemobileyet.png
 
-Mozilla Marketplace
+Firefox Marketplace
 ===================
 
-.. image:: images/mozilla-marketplace.png
+.. image:: images/marketplace.png
 
 Installing apps
 ===============
 
-.. image:: images/mozmarket-install.png
-
-App on Mac OS X
-===============
-
-.. image:: images/boston-globe-mac-os-x.png
-
-manifest.webapp
-===============
-
-.. code-block:: javascript
-
-    {"name": "Boston Globe",
-     "description": "...",
-     "version": "1.0",
-     "launch_path": "/",
-     "icons": {"72": "/media/Icon-72.png"},
-     "installs_allowed_from": ["*"]}
-
-Paid apps
-=========
-
-.. code-block:: javascript
-
-    mozmarket.receipts.verify(function (verifier) {
-      // Look at verifier.state
-    });
+.. image:: images/marketplace-install.png
 
 In-app Payments
 ===============
@@ -154,9 +168,7 @@ In-app Payments
 
 .. code-block:: javascript
 
-    request = mozmarket.buy(onSuccess,
-                            onError);
-    request.sign(paymentJWT)
+    navigator.pay(jwt, onSuccess, onError);
 
 In-app Payments
 ===============
@@ -175,18 +187,11 @@ Identity
 
     kumar.mcmillan@gmail.com
     |
-    navigator.id.getVerifiedEmailAddress()
+    navigator.id.get()
         |
         https://gmail.com/.well-known/vep
             |
             <assertion>
-
-...
-===
-
-.. class:: huge center
-
-    Hello, developers!
 
 Apps: how do we get there?
 ==========================
@@ -198,26 +203,6 @@ Apps: how do we get there?
 
 - better UI libs
 - better dev tools
-
-Responsive Design
-=================
-
-[demo of Responsive Design View in Firefox]
-
-manifest.appcache
-=================
-
-::
-
-    CACHE MANIFEST
-    index.html
-    js/main.js
-    style/main.css
-    ...
-
-    NETWORK:
-    http://*
-    https://*
 
 Web Components (X-Tags)
 =======================
@@ -239,11 +224,6 @@ App Bootstrap
 
     npm install -g volo
     volo create your-app mozilla/mortar
-
-- based on HTML5boilerplate
-- include Twitter bootstrap UI
-- includes x-tags
-- pre-built manifest
 
 What's next
 ===========
