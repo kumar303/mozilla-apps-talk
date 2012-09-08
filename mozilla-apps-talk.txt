@@ -10,39 +10,51 @@ Firefox OS: The Web Is The Platform
 mobile apps
 ===========
 
-.. image:: images/flurry-mobile-v-desktop-usage.png
+.. class:: center
+
+    .. image:: images/flurry-mobile-v-desktop-usage.png
 
 The Rise of Apps
 ================
 
-.. image:: images/ipads-small.jpg
+.. class:: center
+
+    .. image:: images/ipads-small.jpg
 
 Mobile Players
 ==============
 
-.. image:: images/ios-logo.png
+.. class:: center
 
-.. image:: images/Android-Logo_thumb.jpg
-    :width: 220
+    .. image:: images/ios-logo.png
+
+    .. image:: images/Android-Logo_thumb.jpg
+        :width: 220
 
 Open Web Apps
 =============
 
-.. image:: images/the-web-is-the-platform.png
+.. class:: center
+
+    .. image:: images/the-web-is-the-platform.png
 
 The Web Players?
 ================
 
-.. image:: images/Facebook-apps.png
-    :width: 250
+.. class:: center
 
-.. image:: images/google-chrome-logo.jpg
-    :width: 225
+    .. image:: images/Facebook-apps.png
+        :width: 250
+
+    .. image:: images/google-chrome-logo.jpg
+        :width: 225
 
 Firefox OS
 ==========
 
-.. image:: images/firefox-os-phone.png
+.. class:: center
+
+    .. image:: images/firefox-os-phone.png
 
 .. class:: incremental
 
@@ -50,6 +62,62 @@ Firefox OS
     - Open Web Apps
     - Firefox Marketplace
     - Identity
+
+arewemobileyet.com
+==================
+
+.. class:: center
+
+    .. image:: images/arewemobileyet.png
+
+Apps on Android
+===============
+
+.. class:: center
+
+    .. image:: images/firefox-on-android.jpg
+
+Open From Day 1
+===============
+
+.. class:: center
+
+    .. image:: images/b2g-git.png
+
+Partners
+========
+
+- Telefonica
+- ?
+- ?
+- ?
+
+Raspberry Pi
+============
+
+.. class:: center
+
+    .. image:: images/firefox-os-on-raspberry-pi.png
+
+Firefox OS
+==========
+
+- Gonk
+- Gecko
+- Gaia
+
+Firefox OS
+==========
+
+.. image:: images/openwebdevices.png
+
+Firefox OS
+==========
+
+.. class:: center
+
+    .. image:: images/b2g_screens_2_1000.jpg
+        :width: 800px
 
 manifest.webapp
 ===============
@@ -92,76 +160,47 @@ Packaged Apps
 Run web apps anywhere
 =====================
 
-.. image:: images/mozmarket-all-platforms.png
+.. class:: center
 
-Open From Day 1
-===============
-
-.. image:: images/b2g-git.png
-
-Partners
-========
-
-- Telefonica
-- ?
-- ?
-- ?
-
-Raspberry Pi
-============
-
-.. image:: images/firefox-os-on-raspberry-pi.png
-
-Firefox OS
-==========
-
-- Gonk
-- Gecko
-- Gaia
-
-Firefox OS
-==========
-
-.. image:: images/openwebdevices.png
-
-Firefox OS
-==========
-
-.. image:: images/b2g_screens_2_1000.jpg
-    :width: 800px
-
-arewemobileyet.com
-==================
-
-.. image:: images/arewemobileyet.png
+    .. image:: images/mozmarket-all-platforms.png
 
 Firefox Marketplace
 ===================
 
-.. image:: images/marketplace.png
+.. class:: center
+
+    .. image:: images/marketplace.png
 
 Installing apps
 ===============
 
-.. image:: images/marketplace-install.png
+.. class:: center
+
+    .. image:: images/marketplace-install.png
 
 In-app Payments
 ===============
 
-.. image:: images/drawsome-dash.PNG
-    :width: 384px
+.. class:: center
+
+    .. image:: images/drawsome-dash.PNG
+        :width: 384px
 
 In-app Payments
 ===============
 
-.. image:: images/drawsome-coin-shop.PNG
-    :width: 384px
+.. class:: center
+
+    .. image:: images/drawsome-coin-shop.PNG
+        :width: 384px
 
 In-app Payments
 ===============
 
-.. image:: images/drawsome-skrillex.PNG
-    :width: 384px
+.. class:: center
+
+    .. image:: images/drawsome-skrillex.PNG
+        :width: 384px
 
 In-app Payments
 ===============
@@ -173,12 +212,16 @@ In-app Payments
 In-app Payments
 ===============
 
-.. image:: images/inapp-pay.png
+.. class:: center
+
+    .. image:: images/inapp-pay.png
 
 Identity
 ========
 
-.. image:: images/persona-id.png
+.. class:: center
+
+    .. image:: images/persona-id.png
 
 Identity
 ========
