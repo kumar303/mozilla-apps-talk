@@ -4,6 +4,7 @@ Firefox OS: The Web Is The Platform
 =======================================================
 
 :Author: Kumar McMillan, Mozilla
+:URL: http://kumar303.github.com/mozilla-apps-talk/
 :Where: IIT RTC Conference
 :When: Sep 2012
 
@@ -14,40 +15,49 @@ mobile apps
 
     .. image:: images/flurry-mobile-v-desktop-usage.png
 
-The Rise of Apps
-================
-
-.. class:: center
-
-    .. image:: images/ipads-small.jpg
-
 Mobile Players
 ==============
 
+.. image:: images/ios-logo.png
+
+.. image:: images/Android-Logo_thumb.jpg
+    :width: 220
+
+.. class:: incremental
+
+    - Objective C vs. Java
+    - non-portable apps
+
+The Web
+=======
+
+.. class:: center massive
+
+    .. image:: images/the-web-is-the-platform.png
+
+The Web
+=======
+
 .. class:: center
 
-    .. image:: images/ios-logo.png
+    .. image:: images/html5-logo.png
+        :width: 400
 
-    .. image:: images/Android-Logo_thumb.jpg
-        :width: 220
+The Web Players?
+================
+
+.. image:: images/Facebook-apps.png
+    :width: 250
+
+.. image:: images/google-chrome-logo.jpg
+    :width: 225
 
 Open Web Apps
 =============
 
 .. class:: center
 
-    .. image:: images/the-web-is-the-platform.png
-
-The Web Players?
-================
-
-.. class:: center
-
-    .. image:: images/Facebook-apps.png
-        :width: 250
-
-    .. image:: images/google-chrome-logo.jpg
-        :width: 225
+    .. image:: images/mozmarket-all-platforms.png
 
 Firefox OS
 ==========
@@ -56,12 +66,19 @@ Firefox OS
 
     .. image:: images/firefox-os-phone.png
 
-.. class:: incremental
+Apps on Android
+===============
 
-    - Open Web Devices
-    - Open Web Apps
-    - Firefox Marketplace
-    - Identity
+.. class:: center
+
+    .. image:: images/firefox-on-android.jpg
+
+Apps on Desktop
+===============
+
+.. class:: center
+
+    .. image:: images/marketplace-desktop.png
 
 arewemobileyet.com
 ==================
@@ -70,59 +87,36 @@ arewemobileyet.com
 
     .. image:: images/arewemobileyet.png
 
-Apps on Android
+Firefox OS
+==========
+
+.. class:: center
+
+    .. image:: images/firefox-os-stack.png
+
+Firefox OS
+==========
+
+.. class:: center massive
+
+    .. image:: images/firefox-os-apps.jpg
+
+Firefox Marketplace
+===================
+
+.. class:: center massive
+
+    .. image:: images/marketplace.png
+
+Installing apps
 ===============
 
-.. class:: center
+.. class:: center massive
 
-    .. image:: images/firefox-on-android.jpg
-
-Open From Day 1
-===============
-
-.. class:: center
-
-    .. image:: images/b2g-git.png
-
-Partners
-========
-
-- Telefonica
-- ?
-- ?
-- ?
-
-Raspberry Pi
-============
-
-.. class:: center
-
-    .. image:: images/firefox-os-on-raspberry-pi.png
-
-Firefox OS
-==========
-
-- Gonk
-- Gecko
-- Gaia
-
-Firefox OS
-==========
-
-.. image:: images/openwebdevices.png
-
-Firefox OS
-==========
-
-.. class:: center
-
-    .. image:: images/b2g_screens_2_1000.jpg
-        :width: 800px
+    .. image:: images/marketplace-install.png
 
 manifest.webapp
 ===============
-
-https://mobile.twitter.com/cache/twitter.webapp
 
 .. code-block:: javascript
 
@@ -132,89 +126,51 @@ https://mobile.twitter.com/cache/twitter.webapp
    "locales": {
        "en": {
            "description": "Twitter for mobile"
-       },
-       ...
-    }}
+   }}}
 
-Portable Receipts
-=================
+https://mobile.twitter.com/cache/twitter.webapp
+
+Commerce
+========
 
 .. code-block:: javascript
 
-    [{"exp": 1366996465,
-      "iat": 1335460465,
-      "iss": "https://marketplace.mozilla.org/pub.jwk",
-      "jwk": [{"alg": "RSA", ...}]]
+    navigator.pay(paymentJWT,
+                  onSuccess,
+                  onError);
 
-Verifying Receipts
+- app purchases
+- in-app payments
+
+Buy Once, Run Everywhere
+========================
+
+.. class:: center
+
+    .. image:: images/open-web-app-receipts.png
+
+Open From Day 1
+===============
+
+.. class:: center
+
+    .. image:: images/b2g-git.png
+
+Open Collaboration
 ==================
 
-POST https://receiptcheck-marketplace.mozilla.org/verify/...
+.. image:: images/telefonica-logo.gif
 
-Packaged Apps
-=============
+.. image:: images/deutsche-telekom-logo.png
 
-- webapp.zip
-- signed by Marketplace key
+.. image:: images/qualcomm-logo.gif
 
-Run web apps anywhere
-=====================
+Raspberry Pi
+============
 
 .. class:: center
 
-    .. image:: images/mozmarket-all-platforms.png
-
-Firefox Marketplace
-===================
-
-.. class:: center
-
-    .. image:: images/marketplace.png
-
-Installing apps
-===============
-
-.. class:: center
-
-    .. image:: images/marketplace-install.png
-
-In-app Payments
-===============
-
-.. class:: center
-
-    .. image:: images/drawsome-dash.PNG
-        :width: 384px
-
-In-app Payments
-===============
-
-.. class:: center
-
-    .. image:: images/drawsome-coin-shop.PNG
-        :width: 384px
-
-In-app Payments
-===============
-
-.. class:: center
-
-    .. image:: images/drawsome-skrillex.PNG
-        :width: 384px
-
-In-app Payments
-===============
-
-.. code-block:: javascript
-
-    navigator.pay(jwt, onSuccess, onError);
-
-In-app Payments
-===============
-
-.. class:: center
-
-    .. image:: images/inapp-pay.png
+    .. image:: images/firefox-os-on-raspberry-pi.png
 
 Identity
 ========
@@ -228,52 +184,44 @@ Identity
 
 ::
 
-    kumar.mcmillan@gmail.com
-    |
     navigator.id.get()
+    |
+    Login: kumar.mcmillan@gmail.com
         |
         https://gmail.com/.well-known/vep
             |
             <assertion>
 
-Apps: how do we get there?
-==========================
-
-- better mobile experience
-
-  - responsive
-  - offline
-
-- better UI libs
-- better dev tools
-
 Web Components (X-Tags)
 =======================
 
-::
+.. class:: center massive
 
-    <x-slidebox>
-        <x-slides>
-            <x-slide>Slide 1</x-slide>
-            <x-slide>Slide 2</x-slide>
-            <x-slide>Slide 3</x-slide>
-        </x-slides>
-    </x-slidebox>
+  .. image:: images/x-tags-toast.png
 
-App Bootstrap
+  .. image:: images/x-tags-toggle.png
+
+  .. image:: images/x-tags-alert.png
+
+Summary
+=======
+
+- Firefox OS, Android, etc
+- open web app manifest
+- portable receipts
+- ecosystem of web apps
+
+  - optimized for mobile?
+
+- identity
+
+Going Further
 =============
 
-::
-
-    npm install -g volo
-    volo create your-app mozilla/mortar
-
-What's next
-===========
-
-- make awesome UI libs
-- make fantastic dev tools
+- build an open web app
+- play with Firefox OS
+- get involved
 
 Questions?
 
-Further updates: @kumar303
+Further updates: `@kumar303 <https://twitter.com/kumar303>`_
