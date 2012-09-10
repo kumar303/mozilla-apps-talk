@@ -59,6 +59,21 @@ Open Web Apps
 
     .. image:: images/mozmarket-all-platforms.png
 
+manifest.webapp
+===============
+
+.. code-block:: javascript
+
+  {"version": "1.0",
+   "name": "Twitter",
+   "icons": {...},
+   "locales": {
+       "en": {
+           "description": "Twitter for mobile"
+   }}}
+
+https://mobile.twitter.com/cache/twitter.webapp
+
 Firefox OS
 ==========
 
@@ -90,7 +105,7 @@ arewemobileyet.com
 Firefox OS
 ==========
 
-.. class:: center
+.. class:: center massive
 
     .. image:: images/firefox-os-stack.png
 
@@ -114,21 +129,6 @@ Installing apps
 .. class:: center massive
 
     .. image:: images/marketplace-install.png
-
-manifest.webapp
-===============
-
-.. code-block:: javascript
-
-  {"version": "1.0",
-   "name": "Twitter",
-   "icons": {...},
-   "locales": {
-       "en": {
-           "description": "Twitter for mobile"
-   }}}
-
-https://mobile.twitter.com/cache/twitter.webapp
 
 Commerce
 ========
@@ -175,7 +175,7 @@ Raspberry Pi
 Identity
 ========
 
-.. class:: center
+.. class:: center massive
 
     .. image:: images/persona-id.png
 
