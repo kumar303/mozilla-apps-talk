@@ -1,10 +1,9 @@
 
 =======================================================
-Firefox OS: The Web Is The Platform
+Apps: The Web Is The Platform
 =======================================================
 
 :Author: Kumar McMillan, Mozilla
-:URL: http://kumar303.github.com/mozilla-apps-talk/
 :Where: IIT RTC Conference
 :When: Sep 2012
 
