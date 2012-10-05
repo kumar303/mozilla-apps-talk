@@ -4,8 +4,7 @@ Apps: The Web Is The Platform
 =======================================================
 
 :Author: Kumar McMillan, Mozilla
-:Where: IIT RTC Conference
-:When: Sep 2012
+:Where: Chicago Web Conf
 
 mobile apps
 ===========
@@ -42,14 +41,51 @@ The Web
     .. image:: images/html5-logo.png
         :width: 400
 
-The Web Players?
-================
+arewemobileyet.com
+==================
 
-.. image:: images/Facebook-apps.png
-    :width: 250
+.. class:: center
 
-.. image:: images/google-chrome-logo.jpg
-    :width: 225
+    .. image:: images/arewemobileyet.png
+
+Firefox OS
+==========
+
+.. class:: center
+
+    .. image:: images/firefox-os-phone.png
+
+Firefox OS
+==========
+
+.. class:: center massive
+
+    .. image:: images/firefox-os-apps.jpg
+
+Buy Once, Run Everywhere
+========================
+
+.. class:: center
+
+    .. image:: images/open-web-app-receipts.png
+
+Get Involved
+============
+
+Build amazing apps:
+
+`marketplace.mozilla.org <https://marketplace.mozilla.org/>`_
+
+Thanks!
+
+- Kumar McMillan
+- @kumar303
+
+
+
+
+
+
 
 Open Web Apps
 =============
@@ -76,44 +112,9 @@ https://mobile.twitter.com/cache/twitter.webapp
 Firefox OS
 ==========
 
-.. class:: center
-
-    .. image:: images/firefox-os-phone.png
-
-Apps on Android
-===============
-
-.. class:: center
-
-    .. image:: images/firefox-on-android.jpg
-
-Apps on Desktop
-===============
-
-.. class:: center
-
-    .. image:: images/marketplace-desktop.png
-
-arewemobileyet.com
-==================
-
-.. class:: center
-
-    .. image:: images/arewemobileyet.png
-
-Firefox OS
-==========
-
 .. class:: center massive
 
     .. image:: images/firefox-os-stack.png
-
-Firefox OS
-==========
-
-.. class:: center massive
-
-    .. image:: images/firefox-os-apps.jpg
 
 Firefox Marketplace
 ===================
@@ -141,28 +142,12 @@ Commerce
 - app purchases
 - in-app payments
 
-Buy Once, Run Everywhere
-========================
-
-.. class:: center
-
-    .. image:: images/open-web-app-receipts.png
-
 Open From Day 1
 ===============
 
 .. class:: center
 
     .. image:: images/b2g-git.png
-
-Open Collaboration
-==================
-
-.. image:: images/telefonica-logo.gif
-
-.. image:: images/deutsche-telekom-logo.png
-
-.. image:: images/qualcomm-logo.gif
 
 Raspberry Pi
 ============
