@@ -1,18 +1,16 @@
 
 =======================================================
-Apps: The Web Is The Platform
+Work Session: Firefox OS Apps
 =======================================================
 
 :Author: Kumar McMillan, Mozilla
-:Where: IIT RTC Conference
-:When: Sep 2012
 
 mobile apps
 ===========
 
 .. class:: center
 
-    .. image:: images/flurry-mobile-v-desktop-usage.png
+    .. image:: images/mobile-usage-minutes-vs-tv.png
 
 Mobile Players
 ==============
@@ -27,36 +25,26 @@ Mobile Players
     - Objective C vs. Java
     - non-portable apps
 
-The Web
-=======
+Firefox OS
+==========
+
+.. class:: center
+
+    .. image:: images/firefox-os-apps.jpg
+
+Firefox OS
+==========
 
 .. class:: center massive
 
-    .. image:: images/the-web-is-the-platform.png
+    .. image:: images/firefox-os-stack.png
 
-The Web
-=======
-
-.. class:: center
-
-    .. image:: images/html5-logo.png
-        :width: 400
-
-The Web Players?
-================
-
-.. image:: images/Facebook-apps.png
-    :width: 250
-
-.. image:: images/google-chrome-logo.jpg
-    :width: 225
-
-Open Web Apps
-=============
+arewemobileyet.com
+==================
 
 .. class:: center
 
-    .. image:: images/mozmarket-all-platforms.png
+    .. image:: images/arewemobileyet.png
 
 manifest.webapp
 ===============
@@ -73,154 +61,7 @@ manifest.webapp
 
 https://mobile.twitter.com/cache/twitter.webapp
 
-Firefox OS
-==========
+Firefox OS Simulator
+====================
 
-.. class:: center
-
-    .. image:: images/firefox-os-phone.png
-
-Apps on Android
-===============
-
-.. class:: center
-
-    .. image:: images/firefox-on-android.jpg
-
-Apps on Desktop
-===============
-
-.. class:: center
-
-    .. image:: images/marketplace-desktop.png
-
-arewemobileyet.com
-==================
-
-.. class:: center
-
-    .. image:: images/arewemobileyet.png
-
-Firefox OS
-==========
-
-.. class:: center massive
-
-    .. image:: images/firefox-os-stack.png
-
-Firefox OS
-==========
-
-.. class:: center massive
-
-    .. image:: images/firefox-os-apps.jpg
-
-Firefox Marketplace
-===================
-
-.. class:: center massive
-
-    .. image:: images/marketplace.png
-
-Installing apps
-===============
-
-.. class:: center massive
-
-    .. image:: images/marketplace-install.png
-
-Commerce
-========
-
-.. code-block:: javascript
-
-    navigator.pay(paymentJWT,
-                  onSuccess,
-                  onError);
-
-- app purchases
-- in-app payments
-
-Buy Once, Run Everywhere
-========================
-
-.. class:: center
-
-    .. image:: images/open-web-app-receipts.png
-
-Open From Day 1
-===============
-
-.. class:: center
-
-    .. image:: images/b2g-git.png
-
-Open Collaboration
-==================
-
-.. image:: images/telefonica-logo.gif
-
-.. image:: images/deutsche-telekom-logo.png
-
-.. image:: images/qualcomm-logo.gif
-
-Raspberry Pi
-============
-
-.. class:: center
-
-    .. image:: images/firefox-os-on-raspberry-pi.png
-
-Identity
-========
-
-.. class:: center massive
-
-    .. image:: images/persona-id.png
-
-Identity
-========
-
-::
-
-    navigator.id.get()
-    |
-    Login: kumar.mcmillan@gmail.com
-        |
-        https://gmail.com/.well-known/vep
-            |
-            <assertion>
-
-Web Components (X-Tags)
-=======================
-
-.. class:: center massive
-
-  .. image:: images/x-tags-toast.png
-
-  .. image:: images/x-tags-toggle.png
-
-  .. image:: images/x-tags-alert.png
-
-Summary
-=======
-
-- Firefox OS, Android, etc
-- open web app manifest
-- portable receipts
-- ecosystem of web apps
-
-  - optimized for mobile?
-
-- identity
-
-Going Further
-=============
-
-- build an open web app
-- play with Firefox OS
-- get involved
-
-Questions?
-
-Further updates: `@kumar303 <https://twitter.com/kumar303>`_
+[demo]

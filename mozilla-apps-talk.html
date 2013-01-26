@@ -3,15 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.9: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
 <meta name="version" content="S5 1.1" />
-<title>Apps: The Web Is The Platform</title>
+<title>Work Session: Firefox OS Apps</title>
 <meta name="author" content="Kumar McMillan, Mozilla" />
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Id: $Id: html4css1.css 7514 2012-09-14 14:27:12Z milde $
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -79,7 +79,7 @@ div.tip p.admonition-title {
 
 div.attention p.admonition-title, div.caution p.admonition-title,
 div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title {
+div.warning p.admonition-title, .code .error {
   color: red ;
   font-weight: bold ;
   font-family: sans-serif }
@@ -251,9 +251,18 @@ pre.address {
   margin-top: 0 ;
   font: inherit }
 
-pre.literal-block, pre.doctest-block, pre.math {
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
   margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
 
 span.classifier {
   font-family: sans-serif ;
@@ -340,30 +349,26 @@ ul.auto-toc {
 
 </div>
 <div id="footer">
-<h1>Apps: The Web Is The Platform</h1>
+<h1>Work Session: Firefox OS Apps</h1>
 
 </div>
 </div>
 <div class="presentation">
 <div class="slide" id="slide0">
-<h1 class="title">Apps: The Web Is The Platform</h1>
+<h1 class="title">Work Session: Firefox OS Apps</h1>
 <table class="docinfo" frame="void" rules="none">
 <col class="docinfo-name" />
 <col class="docinfo-content" />
 <tbody valign="top">
 <tr><th class="docinfo-name">Author:</th>
 <td>Kumar McMillan, Mozilla</td></tr>
-<tr class="field"><th class="docinfo-name">Where:</th><td class="field-body">IIT RTC Conference</td>
-</tr>
-<tr class="field"><th class="docinfo-name">When:</th><td class="field-body">Sep 2012</td>
-</tr>
 </tbody>
 </table>
 
 </div>
 <div class="slide" id="mobile-apps">
 <h1>mobile apps</h1>
-<img alt="images/flurry-mobile-v-desktop-usage.png" class="center" src="images/flurry-mobile-v-desktop-usage.png" />
+<img alt="images/mobile-usage-minutes-vs-tv.png" class="center" src="images/mobile-usage-minutes-vs-tv.png" />
 </div>
 <div class="slide" id="mobile-players">
 <h1>Mobile Players</h1>
@@ -374,22 +379,17 @@ ul.auto-toc {
 <li>non-portable apps</li>
 </ul>
 </div>
-<div class="slide" id="the-web">
-<h1>The Web</h1>
-<img alt="images/the-web-is-the-platform.png" class="center massive" src="images/the-web-is-the-platform.png" />
+<div class="slide" id="firefox-os">
+<h1>Firefox OS</h1>
+<img alt="images/firefox-os-apps.jpg" class="center" src="images/firefox-os-apps.jpg" />
 </div>
 <div class="slide" id="id1">
-<h1>The Web</h1>
-<img alt="images/html5-logo.png" class="center" src="images/html5-logo.png" style="width: 400px;" />
+<h1>Firefox OS</h1>
+<img alt="images/firefox-os-stack.png" class="center massive" src="images/firefox-os-stack.png" />
 </div>
-<div class="slide" id="the-web-players">
-<h1>The Web Players?</h1>
-<img alt="images/Facebook-apps.png" src="images/Facebook-apps.png" style="width: 250px;" />
-<img alt="images/google-chrome-logo.jpg" src="images/google-chrome-logo.jpg" style="width: 225px;" />
-</div>
-<div class="slide" id="open-web-apps">
-<h1>Open Web Apps</h1>
-<img alt="images/mozmarket-all-platforms.png" class="center" src="images/mozmarket-all-platforms.png" />
+<div class="slide" id="arewemobileyet-com">
+<h1>arewemobileyet.com</h1>
+<img alt="images/arewemobileyet.png" class="center" src="images/arewemobileyet.png" />
 </div>
 <div class="slide" id="manifest-webapp">
 <h1>manifest.webapp</h1>
@@ -403,111 +403,9 @@ ul.auto-toc {
 </pre></div>
 <p><a class="reference external" href="https://mobile.twitter.com/cache/twitter.webapp">https://mobile.twitter.com/cache/twitter.webapp</a></p>
 </div>
-<div class="slide" id="firefox-os">
-<h1>Firefox OS</h1>
-<img alt="images/firefox-os-phone.png" class="center" src="images/firefox-os-phone.png" />
-</div>
-<div class="slide" id="apps-on-android">
-<h1>Apps on Android</h1>
-<img alt="images/firefox-on-android.jpg" class="center" src="images/firefox-on-android.jpg" />
-</div>
-<div class="slide" id="apps-on-desktop">
-<h1>Apps on Desktop</h1>
-<img alt="images/marketplace-desktop.png" class="center" src="images/marketplace-desktop.png" />
-</div>
-<div class="slide" id="arewemobileyet-com">
-<h1>arewemobileyet.com</h1>
-<img alt="images/arewemobileyet.png" class="center" src="images/arewemobileyet.png" />
-</div>
-<div class="slide" id="id2">
-<h1>Firefox OS</h1>
-<img alt="images/firefox-os-stack.png" class="center massive" src="images/firefox-os-stack.png" />
-</div>
-<div class="slide" id="id3">
-<h1>Firefox OS</h1>
-<img alt="images/firefox-os-apps.jpg" class="center massive" src="images/firefox-os-apps.jpg" />
-</div>
-<div class="slide" id="firefox-marketplace">
-<h1>Firefox Marketplace</h1>
-<img alt="images/marketplace.png" class="center massive" src="images/marketplace.png" />
-</div>
-<div class="slide" id="installing-apps">
-<h1>Installing apps</h1>
-<img alt="images/marketplace-install.png" class="center massive" src="images/marketplace-install.png" />
-</div>
-<div class="slide" id="commerce">
-<h1>Commerce</h1>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">navigator.pay(paymentJWT,
-              onSuccess,
-              onError);
-</pre></div>
-<ul class="simple">
-<li>app purchases</li>
-<li>in-app payments</li>
-</ul>
-</div>
-<div class="slide" id="buy-once-run-everywhere">
-<h1>Buy Once, Run Everywhere</h1>
-<img alt="images/open-web-app-receipts.png" class="center" src="images/open-web-app-receipts.png" />
-</div>
-<div class="slide" id="open-from-day-1">
-<h1>Open From Day 1</h1>
-<img alt="images/b2g-git.png" class="center" src="images/b2g-git.png" />
-</div>
-<div class="slide" id="open-collaboration">
-<h1>Open Collaboration</h1>
-<img alt="images/telefonica-logo.gif" src="images/telefonica-logo.gif" />
-<img alt="images/deutsche-telekom-logo.png" src="images/deutsche-telekom-logo.png" />
-<img alt="images/qualcomm-logo.gif" src="images/qualcomm-logo.gif" />
-</div>
-<div class="slide" id="raspberry-pi">
-<h1>Raspberry Pi</h1>
-<img alt="images/firefox-os-on-raspberry-pi.png" class="center" src="images/firefox-os-on-raspberry-pi.png" />
-</div>
-<div class="slide" id="identity">
-<h1>Identity</h1>
-<img alt="images/persona-id.png" class="center massive" src="images/persona-id.png" />
-</div>
-<div class="slide" id="id4">
-<h1>Identity</h1>
-<pre class="literal-block">
-navigator.id.get()
-|
-Login: kumar.mcmillan&#64;gmail.com
-    |
-    https://gmail.com/.well-known/vep
-        |
-        &lt;assertion&gt;
-</pre>
-</div>
-<div class="slide" id="web-components-x-tags">
-<h1>Web Components (X-Tags)</h1>
-<img alt="images/x-tags-toast.png" class="center massive" src="images/x-tags-toast.png" />
-<img alt="images/x-tags-toggle.png" class="center massive" src="images/x-tags-toggle.png" />
-<img alt="images/x-tags-alert.png" class="center massive" src="images/x-tags-alert.png" />
-</div>
-<div class="slide" id="summary">
-<h1>Summary</h1>
-<ul class="simple">
-<li>Firefox OS, Android, etc</li>
-<li>open web app manifest</li>
-<li>portable receipts</li>
-<li>ecosystem of web apps<ul>
-<li>optimized for mobile?</li>
-</ul>
-</li>
-<li>identity</li>
-</ul>
-</div>
-<div class="slide" id="going-further">
-<h1>Going Further</h1>
-<ul class="simple">
-<li>build an open web app</li>
-<li>play with Firefox OS</li>
-<li>get involved</li>
-</ul>
-<p>Questions?</p>
-<p>Further updates: <a class="reference external" href="https://twitter.com/kumar303">&#64;kumar303</a></p>
+<div class="slide" id="firefox-os-simulator">
+<h1>Firefox OS Simulator</h1>
+<p>[demo]</p>
 </div>
 </div>
 </body>
