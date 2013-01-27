@@ -5,6 +5,13 @@ Work Session: Firefox OS Apps
 
 :Author: Kumar McMillan, Mozilla
 
+All the things
+==============
+
+.. class:: huge
+
+    https://etherpad.mozilla.org/fxos-chicago
+
 mobile apps
 ===========
 
@@ -65,3 +72,10 @@ Firefox OS Simulator
 ====================
 
 [demo]
+
+All the things
+==============
+
+.. class:: huge
+
+    https://etherpad.mozilla.org/fxos-chicago
